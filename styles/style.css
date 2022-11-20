@@ -618,6 +618,10 @@ video {
   justify-content: space-around;
 }
 
+.gap-12 {
+  gap: 3rem;
+}
+
 .gap-20 {
   gap: 5rem;
 }
@@ -626,16 +630,17 @@ video {
   gap: 1.75rem;
 }
 
-.gap-12 {
-  gap: 3rem;
+.rounded-full {
+  border-radius: 9999px;
 }
 
 .rounded-lg {
   border-radius: 0.5rem;
 }
 
-.rounded-full {
-  border-radius: 9999px;
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .bg-underline_y {
@@ -645,11 +650,6 @@ video {
 .bg-teal-300 {
   --tw-bg-opacity: 1;
   background-color: rgb(94 234 212 / var(--tw-bg-opacity));
-}
-
-.bg-white {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .bg-\[url\(\'\/images\/mobile\/image-graphic-design\.jpg\'\)\] {
@@ -682,24 +682,8 @@ video {
   padding-right: 3rem;
 }
 
-.pb-44 {
-  padding-bottom: 11rem;
-}
-
-.pt-80 {
-  padding-top: 20rem;
-}
-
-.pb-20 {
-  padding-bottom: 5rem;
-}
-
 .pt-12 {
   padding-top: 3rem;
-}
-
-.pb-12 {
-  padding-bottom: 3rem;
 }
 
 .pr-7 {
@@ -718,8 +702,28 @@ video {
   padding-bottom: 1rem;
 }
 
+.pb-44 {
+  padding-bottom: 11rem;
+}
+
+.pt-80 {
+  padding-top: 20rem;
+}
+
+.pb-20 {
+  padding-bottom: 5rem;
+}
+
+.pb-12 {
+  padding-bottom: 3rem;
+}
+
 .text-center {
   text-align: center;
+}
+
+.align-middle {
+  vertical-align: middle;
 }
 
 .font-fr {
@@ -728,6 +732,11 @@ video {
 
 .font-bar {
   font-family: Barlow;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .text-7xl {
@@ -750,11 +759,6 @@ video {
   line-height: 1;
 }
 
-.text-sm {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-}
-
 .uppercase {
   text-transform: uppercase;
 }
@@ -766,6 +770,11 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .text-gray-500 {
@@ -804,16 +813,6 @@ video {
   }
 }
 
-@media (min-width: 768px) {
-  .md\:flex {
-    display: flex;
-  }
-
-  .md\:flex-row-reverse {
-    flex-direction: row-reverse;
-  }
-}
-
 @media (min-width: 1440px) {
   .desktop\:flex {
     display: flex;
@@ -823,11 +822,7 @@ video {
     display: none;
   }
 
-  .desktop\:justify-around {
-    justify-content: space-around;
-  }
-
-  .desktop\:gap-12 {
-    gap: 3rem;
+  .desktop\:flex-row-reverse {
+    flex-direction: row-reverse;
   }
 }
